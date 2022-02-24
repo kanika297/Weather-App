@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchCityViewController" customModule="WeatherApp" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="K3E-aZ-qCf" id="X7N-bK-K9c"/>
+                <outlet property="searchView" destination="Q4j-Rr-hyH" id="9z0-8o-nl0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qdK-o7-blf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K3E-aZ-qCf" userLabel="ContentView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4j-Rr-hyH" userLabel="SearchView">
+                                    <rect key="frame" x="20" y="10" width="335" height="60"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="MJB-OZ-8Pd"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="800" id="4Pb-U1-9L3"/>
+                                <constraint firstAttribute="trailing" secondItem="Q4j-Rr-hyH" secondAttribute="trailing" constant="20" id="OzR-aZ-ZNb"/>
+                                <constraint firstItem="Q4j-Rr-hyH" firstAttribute="leading" secondItem="K3E-aZ-qCf" secondAttribute="leading" constant="20" id="Pr4-YC-2CK"/>
+                                <constraint firstItem="Q4j-Rr-hyH" firstAttribute="top" secondItem="K3E-aZ-qCf" secondAttribute="top" constant="10" id="dpH-Z4-jG5"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="K3E-aZ-qCf" secondAttribute="bottom" id="8xs-a1-Kvg"/>
+                        <constraint firstAttribute="trailing" secondItem="K3E-aZ-qCf" secondAttribute="trailing" id="Th9-W9-fpp"/>
+                        <constraint firstItem="K3E-aZ-qCf" firstAttribute="top" secondItem="qdK-o7-blf" secondAttribute="top" id="fax-Sz-cco"/>
+                        <constraint firstItem="K3E-aZ-qCf" firstAttribute="leading" secondItem="qdK-o7-blf" secondAttribute="leading" id="wNe-yu-Fab"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="qdK-o7-blf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LQm-ej-k9q"/>
+                <constraint firstAttribute="bottom" secondItem="qdK-o7-blf" secondAttribute="bottom" id="YSP-ll-QJD"/>
+                <constraint firstItem="qdK-o7-blf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aW2-kW-pIV"/>
+                <constraint firstItem="K3E-aZ-qCf" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="kKZ-it-00C"/>
+                <constraint firstAttribute="trailing" secondItem="qdK-o7-blf" secondAttribute="trailing" id="rMs-KW-EMR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="136.80000000000001" y="127.736131934033"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
